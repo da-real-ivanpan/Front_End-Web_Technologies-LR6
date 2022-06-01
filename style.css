@@ -1,0 +1,31 @@
+input {
+    margin: 25px;
+    width: 250px;
+    height: 50px;
+}
+
+button{
+    margin: 25px;
+    width: 250px;
+    height: 50px;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div p
+{
+    display: inline;
+}
+div b
+{
+    display: inline;
+}

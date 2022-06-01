@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Панасенко І.О. ІС-93</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Sixth lab work of Ivan Panasenko">
+        <meta name="keywords" content="HTML">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script src="script.js"></script>
+    <body onload="toName()">
+        <form action="index.php"></form>
+        <h1 style="margin: 25px; text-align: center;">Форма для заповнення</h1>
+        <div class="flexRow">
+            <form>
+                <div class="flexCol">
+                    <input value="Панасенко І. О." type="text" name="nsp" id="nsp" placeholder="ПІБ">
+                    <input value="ІС-93" type="text" name="group" id="group"  placeholder="Група">
+                    <input value="NK№123456" type="text" name="idcard" id="id-card" placeholder="ID-card">
+                    <input value="19.05.2001" type="date" name="bd" id="bd" placeholder="Дата народж.">
+                    <input value="ivanmail@mail.com" type="email" name="email" id="email" placeholder="e-mail">
+                    <input value="20" type="number" name="suma" id="suma" placeholder="10+10=?">
+                    <button onclick="return Formdata(this.form)">Підтвердити</button>
+                </div>
+            </form>
+            <div class="flexCol">
+                <h2>Введені дані</h2>
+                <div class="textCol" style="margin: 15">
+                    <b>ПІБ: </b> <p id="Name">???</p>
+                </div>
+                <div class="textCol" style="margin: 15">
+                    <b>Група: </b> <p id="Group">???</p>
+                </div>
+                <div class="textCol" style="margin: 15">
+                    <b>ID-card: </b> <p id="ID-card">???</p>
+                </div>
+                <div class="textCol" style="margin: 15">
+                    <b>Дата народження: </b> <p id="BD">???</p>
+                </div>
+                <div class="textCol" style="margin: 15">
+                    <b>e-mail: </b> <p id="Email">???</p>
+                </div>
+            </div>
+        </div>
+        <div class="flexCol">
+            <input id="Pallete" type="color" style="align-self:center;">
+            <div class="flexRow">
+                <table border="3px" style="flex: center; width: 300px; height: 300px;">
+                    <tr id="Row1">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr id="Row2">
+                        <td>7</td>
+                        <td id="Cell8" ondblclick="rowColor()" onmouseover="boxHover()" onclick="boxClick()">8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr id="Row3">
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr id="Row4">
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr id="Row5">
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                    </tr>
+                    <tr id="Row6">
+                        <td>31</td>
+                        <td>32</td>
+                        <td>33</td>
+                        <td>34</td>
+                        <td>35</td>
+                        <td>36</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
