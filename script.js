@@ -53,7 +53,7 @@ function Formdata(data){
     return false;}
 
         /* якщо не заповнено поле День Народження */
-    if (data.bd != null && data.bd.length < 3)
+    if (data.bd.value == '' || data.bd.value.length < 3)
     {
     alert('Заповніть поле "День народження"');
     return false;}
@@ -84,13 +84,14 @@ function Formdata(data){
     NameText = data.nsp.value;
     GroupText = data.group.value;
     IDText = data.idcard.value;
-    BDText = data.bd.defaultValue;
+    BDText = data.bd.value;
     EmailText = data.email.value; 
     document.getElementById("Name").innerHTML = NameText;
     document.getElementById("Group").innerHTML = GroupText;
     document.getElementById("ID-card").innerHTML = IDText;
     document.getElementById("BD").innerHTML = BDText;
     document.getElementById("Email").innerHTML = EmailText;    
+    alert('ПІБ: ' + NameText + '\nГрупа: ' + GroupText + '\nID-card: ' + IDText + '\nДата народження: ' + BDText +'\ne-mail: ' + EmailText);
 }
     
 function boxClick(){
